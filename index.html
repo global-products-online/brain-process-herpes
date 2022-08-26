@@ -167,6 +167,7 @@
                 <a href="https://mwebclassic.com/6340/4822/3/?subid=vsl">
                     <img src="./brain.png" class="img-responsive" alt="Herpesyl Bottle">
                 </a>
+                <pre id="watching"></pre>
             </div>
         </div>
     </div>
@@ -200,6 +201,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const el = document.getElementById("watching");
+
+        setInterval(() => {
+            const watchNumber = Math.floor(Math.random() * 101);
+            el.innerHTML = watchNumber + " people watching"
+        }, 10000);
+    </script>
 </body>
 
 </html>
